@@ -1,0 +1,28 @@
+##
+# This is Git's per-user configuration file.
+##
+
+[core]
+	editor = vim
+	excludesfile = /Users/haah/dotfiles/.gitignore_global
+
+[alias]
+	mylog = log --graph --decorate --pretty=oneline --abbrev-commit --all --date=relative
+
+[color]
+	ui = true
+
+[format]
+	pretty = oneline
+
+[push]
+	default = simple
+
+[user]
+	name = youngiggy
+	email = youngik.joo@meshkorea.net
+
+[filter "lfs"]
+	clean = git-lfs clean %f
+	smudge = git-lfs smudge %f
+	required = true
